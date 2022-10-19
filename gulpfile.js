@@ -12,9 +12,17 @@ const useref = require('gulp-useref-plus');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require("gulp-autoprefixer");
-const sourcemaps = require("gulp-sourcemaps");    
+const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require('gulp-clean-css');
 const rtlcss = require('gulp-rtlcss');
+const path = require('path');
+
+console.log(gulp.dest("/src/"));
+
+let testPath = path.dirname(__dirname);
+console.log("curr path == " + testPath);
+let domain = path.hostname;
+console.log(domain); //www.pakainfo.com
 
 const paths = {
   base:   {
@@ -115,7 +123,7 @@ gulp.task('jsPages', function() {
 });
 
 gulp.task('scss', function () {
-  // generate ltr  
+  // generate ltr
   gulp
     .src(paths.src.scss.main)
     .pipe(sourcemaps.init())
@@ -127,11 +135,11 @@ gulp.task('scss', function () {
     .pipe(cleanCSS())
     .pipe(
       rename({
-        // 
+        //
         suffix: ".min"
       })
     )
-    .pipe(sourcemaps.write("./")) 
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(paths.dist.css.dir));
 
   // generate rtl
@@ -147,11 +155,11 @@ gulp.task('scss', function () {
     // .pipe(cleanCSS())
     .pipe(
       rename({
-        // 
+        //
         suffix: "-rtl.min"
       })
     )
-    .pipe(sourcemaps.write("./")) 
+    .pipe(sourcemaps.write("./"))
     .pipe(gulp.dest(paths.dist.css.dir));
 });
 
@@ -187,7 +195,7 @@ gulp.task('copy:all', function() {
       paths.src.base.files,
       '!' + paths.src.partials.dir, '!' + paths.src.partials.files,
       '!' + paths.src.scss.dir, '!' + paths.src.scss.files,
-      '!' + paths.src.js.dir, '!' + paths.src.js.files, '!' + paths.src.js.main, 
+      '!' + paths.src.js.dir, '!' + paths.src.js.files, '!' + paths.src.js.main,
       '!' + paths.src.html.files,
     ])
     .pipe(gulp.dest(paths.dist.base.dir));

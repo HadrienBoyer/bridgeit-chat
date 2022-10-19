@@ -12,7 +12,7 @@ File: Index init js
   var dummyImage = "assets/images/users/user-dummy-img.jpg";
 
   var currentSelectedChat = "users";
-  var url = window.location.origin + "/assets/js/dir/";
+  var url = "../assets/js/dir/";
   var usersList = "";
   var userChatId = 1;
   document.getElementById("copyClipBoard").style.display = "none";
