@@ -15,14 +15,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const sourcemaps = require("gulp-sourcemaps");
 const cleanCSS = require('gulp-clean-css');
 const rtlcss = require('gulp-rtlcss');
-const path = require('path');
-
-console.log(gulp.dest("/src/"));
-
-let testPath = path.dirname(__dirname);
-console.log("curr path == " + testPath);
-let domain = path.hostname;
-console.log(domain); //www.pakainfo.com
+// const path = require('path');
 
 const paths = {
   base:   {
