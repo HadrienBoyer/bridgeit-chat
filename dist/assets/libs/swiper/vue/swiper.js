@@ -278,6 +278,10 @@ const Swiper = {
       type: Boolean,
       default: undefined
     },
+    rewind: {
+      type: Boolean,
+      default: undefined
+    },
     allowSlidePrev: {
       type: Boolean,
       default: undefined
@@ -530,6 +534,7 @@ const Swiper = {
       swiperRef.value.virtual.slides = slidesRef.value;
       const extendWith = {
         cache: false,
+        slides: slidesRef.value,
         renderExternal: data => {
           virtualData.value = data;
         },

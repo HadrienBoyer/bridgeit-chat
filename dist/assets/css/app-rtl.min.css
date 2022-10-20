@@ -713,16 +713,12 @@ File: Main Css File
           box-sizing: border-box !important;
   position: relative;
   display: block;
-  height: 100%;
-  /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  height: 100%; /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
   width: auto;
   visibility: visible;
-  overflow: auto;
-  /* Scroll on this element otherwise element can't have a padding applied properly */
-  max-width: 100%;
-  /* Not required for horizontal scroll to trigger */
-  max-height: 100%;
-  /* Needed for vertical scroll to trigger */
+  overflow: auto; /* Scroll on this element otherwise element can't have a padding applied properly */
+  max-width: 100%; /* Not required for horizontal scroll to trigger */
+  max-height: 100%; /* Needed for vertical scroll to trigger */
   scrollbar-width: none;
   padding: 0px !important;
 }
@@ -1893,7 +1889,6 @@ body[data-layout-mode=dark] a.fg-emoji-picker-close-button {
 .chat-input-section {
     background-color: #f2f2f2 !important;
   }
-
   [data-layout-mode=dark] .user-chat-topbar,
 [data-layout-mode=dark] .chat-input-section {
     background-color: #2e2e2e !important;
