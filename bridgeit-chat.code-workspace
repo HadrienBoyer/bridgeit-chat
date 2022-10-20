@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"editor.maxTokenizationLineLength": 30000
+	}
 }

@@ -31,7 +31,8 @@
     "gulp-useref-plus": "0.0.8",
     "node-sass": "^7.0.1",
     "rtlcss": "^3.0.0",
-    "sass": "^1.49.7"
+    "sass": "^1.49.7",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {
     "@simonwep/pickr": "^1.8.2",
@@ -40,6 +41,7 @@
     "fg-emoji-picker": "^1.0.1",
     "glightbox": "^3.0.9",
     "glob-watcher": "^2.0.0",
+    "gulp-pwa": "^1.0.1",
     "gulp-rtlcss": "^2.0.0",
     "node-waves": "^0.7.6",
     "simplebar": "^5.3.5",

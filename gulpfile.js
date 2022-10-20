@@ -224,8 +224,23 @@ gulp.task('html', function() {
     .pipe(gulp.dest(paths.dist.base.dir));
 });
 
+//const gulp = require( 'gulp' );
+const pwa = require( 'gulp-pwa' );
+
+const options = {
+  srcDir: '/dist/assets/images/',
+  name: 'BridgeIt',
+  short_name: 'BridgeIt',
+  theme_color: '#9cff03',
+  background_color: '#9cff03',
+}
+
+gulp.task( 'build', () => {
+  gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html');
+  return gulp.src( 'html/**/*.html' ).pipe( pwa( options ) ).pipe(gulp.dest( 'dist' ));
+});
 // gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
-gulp.task('build', gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
+//gulp.task('build', gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 
 // gulp.task('default', gulp.series(gulp.parallel('fileinclude', 'scss'), gulp.parallel('browsersync', 'watch')));
 gulp.task('default', gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs', 'fileinclude', 'scss', 'js', 'jsPages', 'html'), gulp.parallel('browsersync', 'watch')));
