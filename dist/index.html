@@ -1,34 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Chat | BridgeIt • Chat App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Omiklo - Chat App" name="description" />
-    <meta name="keywords" content="bridge-it, bridgeit, omiklo, chat, secure, communication, discussion, friends, messenger, web app"/>
-    <meta content="omiklo" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" id="tabIcon">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chat | BridgeIt • Chat App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Omiklo - Chat App" name="description" />
+        <meta name="keywords" content="bridge-it, bridgeit, omiklo, chat, secure, communication, discussion, friends, messenger, web app"/>
+        <meta content="omiklo" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico" id="tabIcon">
 
-    <!-- glightbox css -->
-    <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
+        <!-- glightbox css -->
+        <link rel="stylesheet" href="assets/libs/glightbox/css/glightbox.min.css">
 
-    <!-- One of the following themes -->
-    <link rel="stylesheet" href="assets/libs/@simonwep/pickr/themes/nano.min.css" /> <!-- 'classic' theme -->
+        <!-- One of the following themes -->
+        <link rel="stylesheet" href="assets/libs/@simonwep/pickr/themes/nano.min.css" /> <!-- 'classic' theme -->
 
-    <!-- swiper css -->
-    <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+        <!-- swiper css -->
+        <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
 
-    <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
-</head>
+    </head>
 
-<body>
+    <body>
 
     <div class="layout-wrapper d-lg-flex">
 
@@ -511,7 +511,7 @@
 
                             <form>
                                 <div class="input-group search-panel mb-4">
-                                    <input type="text" class="form-control bg-light border-0" id="searchContact" onkeyup="searchContacts()" placeholder="Search contacts..." aria-label="Search Contacts..."
+                                    <input type="text" class="form-control bg-light border-0" id="searchContact" onkeyup="searchContacts()" placeholder="Search contacts..." aria-label="Search Contacts..." 
                                     aria-describedby="button-searchcontactsaddon" autocomplete="off">
                                     <button class="btn btn-light p-0" type="button" id="button-searchcontactsaddon"><i class='bx bx-search align-middle'></i></button>
                                 </div>
@@ -520,7 +520,7 @@
                         <!-- end p-4 -->
 
                         <div class="chat-message-list chat-group-list" data-simplebar >
-                            <div class="sort-contact">
+                            <div class="sort-contact">            
                             </div>
                         </div>
                         <!-- end contact lists -->
@@ -544,8 +544,8 @@
 
                         <!-- Start contact lists -->
                         <div class="chat-message-list chat-call-list" data-simplebar>
-                            <ul class="list-unstyled chat-list" id="callList">
-
+                            <ul class="list-unstyled chat-list" id="callList">      
+                  
                             </ul>
                         </div>
                         <!-- end contact lists -->
@@ -1580,7 +1580,8 @@
                                     <div class="col-auto">
                                         <div class="chat-input-links me-md-2">
                                             <div class="links-list-item" data-bs-toggle="tooltip" data-bs-trigger="hover"
-                                                data-bs-placement="top" title="More">
+                                            data-bs-placement="top"
+                                            title="More">
                                                 <button type="button"
                                                     class="btn btn-link text-decoration-none btn-lg waves-effect"
                                                     data-bs-toggle="collapse" data-bs-target="#chatinputmorecollapse"
@@ -1653,7 +1654,9 @@
                                                         <div>
                                                             <input id="attachedfile-input" type="file" class="d-none"
                                                                 accept=".zip,.rar,.7zip,.pdf" multiple>
-                                                            <label for="attachedfile-input"
+                                                            <label
+                                                            title="File input"
+                                                            for="attachedfile-input"
                                                                 class="avatar-sm mx-auto stretched-link">
                                                                 <span
                                                                     class="avatar-title fs-18 bg-soft-primary text-primary rounded-circle">
@@ -1683,7 +1686,9 @@
                                                         <div>
                                                             <input id="galleryfile-input" type="file" class="d-none"
                                                                 accept="image/png, image/gif, image/jpeg" multiple>
-                                                            <label for="galleryfile-input"
+                                                            <label
+                                                            title="Gallery input"
+                                                            for="galleryfile-input"
                                                                 class="avatar-sm mx-auto stretched-link">
                                                                 <span
                                                                     class="avatar-title fs-18 bg-soft-primary text-primary rounded-circle">
@@ -1700,7 +1705,9 @@
                                                         <div>
                                                             <input id="audiofile-input" type="file" class="d-none"
                                                                 accept="audio/*" multiple>
-                                                            <label for="audiofile-input"
+                                                            <label
+                                                            title="Audiofile input"
+                                                            for="audiofile-input"
                                                                 class="avatar-sm mx-auto stretched-link">
                                                                 <span
                                                                     class="avatar-title fs-18 bg-soft-primary text-primary rounded-circle">
@@ -2171,6 +2178,7 @@
                     <!-- end user-profile-desc -->
                 </div>
                 <!-- end User profile detail sidebar -->
+
             </div>
             <!-- end user chat content -->
         </div>
@@ -3576,156 +3584,163 @@
     </div>
     <!-- end  layout wrapper -->
 
-    <!-- Style switcher -->
-    <div id="style-switcher">
-        <ul class="list-unstyled mb-0 vstack gap-2">
-            <li>
-                <a data-bs-toggle="offcanvas" href="#theme-settings-offcanvas"
-                    class="settings bg-soft-success text-success rounded"><i class="mdi mdi-cog mdi-spin"></i></a>
-            </li>
-            <li>
-                <a href="javascript:void(0);" class="settings bg-soft-danger text-danger rounded"><i
-                        class="ri-shopping-bag-3-line"></i></a>
-            </li>
-        </ul>
+<!-- Style switcher -->
+<div id="style-switcher">
+    <ul class="list-unstyled mb-0 vstack gap-2">
+        <li>
+            <a data-bs-toggle="offcanvas" href="#theme-settings-offcanvas"
+                class="settings bg-soft-success text-success rounded"><i class="mdi mdi-cog mdi-spin"></i></a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="settings bg-soft-danger text-danger rounded"><i
+                    class="ri-shopping-bag-3-line"></i></a>
+        </li>
+    </ul>
+</div>
+<!-- end switcher-->
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="theme-settings-offcanvas"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-soft-info">
+        <h5 class="offcanvas-title" id="theme-settings-offcanvasLabel">Theme Customizer</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <!-- end switcher-->
-
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="theme-settings-offcanvas"
-        aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header bg-soft-info">
-            <h5 class="offcanvas-title" id="theme-settings-offcanvasLabel">Theme Customizer</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body customizer-palettes">
-            <div class="row g-3">
-                <div class="col-lg-12">
-                    <div class="mt-3">
-                        <h6 class="text-muted text-uppercase fs-13 mb-0">Select Custome Colors</h6>
-                    </div>
+    <div class="offcanvas-body customizer-palettes">
+        <div class="row g-3">
+            <div class="col-lg-12">
+                <div class="mt-3">
+                    <h6 class="text-muted text-uppercase fs-13 mb-0">Select Custome Colors</h6>
                 </div>
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color01" name="bgcolor-radio" type="radio" value="color01"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color01 p-0 avatar-md w-100"
-                            for="customizer-color01"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-01</h5>
-                </div>
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color02" name="bgcolor-radio" type="radio" value="color02"
-                            class="form-check-input theme-color" checked>
-                        <label class="form-check-label customizer-color02 p-0 avatar-md w-100"
-                            for="customizer-color02"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-02</h5>
-                </div>
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color03" name="bgcolor-radio" type="radio" value="color03"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color03 p-0 avatar-md w-100"
-                            for="customizer-color03"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-03</h5>
-                </div>
-                <!-- end col -->
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color04" name="bgcolor-radio" type="radio" value="color04"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color04 p-0 avatar-md w-100"
-                            for="customizer-color04"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-04</h5>
-                </div>
-                <!-- end col -->
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="custo" id="customizer-color05" name="bgcolor-radio" type="radio" value="color05"
-                            class="form-check-input theme-color">
-                        <label for="custo" class="form-check-label customizer-color05 p-0 avatar-md w-100"
-                            for="customizer-color05"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-05</h5>
-                </div>
-                <!-- end col -->
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color06" name="bgcolor-radio" type="radio" value="color06"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color06 p-0 avatar-md w-100"
-                            for="customizer-color06"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-06</h5>
-                </div>
-                <!-- end col -->
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color07" name="bgcolor-radio" type="radio" value="color07"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color07 p-0 avatar-md w-100"
-                            for="customizer-color07"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-07</h5>
-                </div>
-                <!-- end col -->
-                <div class="col-6">
-                    <div class="form-check card-radio">
-                        <input id="customizer-color08" name="bgcolor-radio" type="radio" value="color08"
-                            class="form-check-input theme-color">
-                        <label class="form-check-label customizer-color08 p-0 avatar-md w-100"
-                            for="customizer-color08"></label>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Color-08</h5>
-                </div>
-                <!-- end col -->
             </div>
-            <!--end row-->
-            <div class="row mt-4">
-                <div class="col-lg-12">
-                    <div class="d-flex mb-3">
-                        <h6 class="flex-grow-1 text-muted text-uppercase fs-13 mb-0">Select Custome Colors to Picker</h6>
-                    </div>
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color01" name="bgcolor-radio" type="radio" value="color01"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color01 p-0 avatar-md w-100"
+                        for="customizer-color01"></label>
                 </div>
-                <!--end col-->
-                <div class="col-lg-6">
-                    <div class="custom-colors-picker">
-                        <div class="colorpicker-primary"></div>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Primary</h5>
-                </div>
-                <!--end col-->
-                <div class="col-lg-6">
-                    <div class="custom-colors-picker">
-                        <div class="colorpicker-secondary"></div>
-                    </div>
-                    <h5 class="fs-13 text-center mt-2">Secondary</h5>
-                </div>
-                <!--end col-->
+                <h5 class="fs-13 text-center mt-2">Color-01</h5>
             </div>
-            <!--end row-->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color02" name="bgcolor-radio" type="radio" value="color02"
+                        class="form-check-input theme-color" checked>
+                    <label class="form-check-label customizer-color02 p-0 avatar-md w-100"
+                        for="customizer-color02"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-02</h5>
+            </div>
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color03" name="bgcolor-radio" type="radio" value="color03"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color03 p-0 avatar-md w-100"
+                        for="customizer-color03"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-03</h5>
+            </div>
+            <!-- end col -->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color04" name="bgcolor-radio" type="radio" value="color04"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color04 p-0 avatar-md w-100"
+                        for="customizer-color04"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-04</h5>
+            </div>
+            <!-- end col -->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color05" name="bgcolor-radio" type="radio" value="color05"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color05 p-0 avatar-md w-100"
+                        for="customizer-color05"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-05</h5>
+            </div>
+            <!-- end col -->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color06" name="bgcolor-radio" type="radio" value="color06"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color06 p-0 avatar-md w-100"
+                        for="customizer-color06"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-06</h5>
+            </div>
+            <!-- end col -->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color07" name="bgcolor-radio" type="radio" value="color07"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color07 p-0 avatar-md w-100"
+                        for="customizer-color07"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-07</h5>
+            </div>
+            <!-- end col -->
+            <div class="col-6">
+                <div class="form-check card-radio">
+                    <input id="customizer-color08" name="bgcolor-radio" type="radio" value="color08"
+                        class="form-check-input theme-color">
+                    <label class="form-check-label customizer-color08 p-0 avatar-md w-100"
+                        for="customizer-color08"></label>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Color-08</h5>
+            </div>
+            <!-- end col -->
         </div>
+        <!--end row-->
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <div class="d-flex mb-3">
+                    <h6 class="flex-grow-1 text-muted text-uppercase fs-13 mb-0">Select Custome Colors to Picker</h6>
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-lg-6">
+                <div class="custom-colors-picker">
+                    <div class="colorpicker-primary"></div>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Primary</h5>
+            </div>
+            <!--end col-->
+            <div class="col-lg-6">
+                <div class="custom-colors-picker">
+                    <div class="colorpicker-secondary"></div>
+                </div>
+                <h5 class="fs-13 text-center mt-2">Secondary</h5>
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
     </div>
+</div>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
-    <!-- Modern colorpicker bundle -->
-    <script src="assets/libs/@simonwep/pickr/pickr.min.js"></script>
-    <!-- glightbox js -->
-    <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-    <!-- fg-emoji-picker JS -->
-    <script src="assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
-    <!-- page init -->
-    <script src="assets/js/pages/index.init.js"></script>
-    <script src="assets/js/app.js"></script>
 
+<!-- JAVASCRIPT -->
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/libs/simplebar/simplebar.min.js"></script>
+<script src="assets/libs/node-waves/waves.min.js"></script>
+
+<!-- Modern colorpicker bundle -->
+<script src="assets/libs/@simonwep/pickr/pickr.min.js"></script>
+
+<!-- glightbox js -->
+<script src="assets/libs/glightbox/js/glightbox.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+<!-- fg-emoji-picker JS -->
+<script src="assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
+
+<!-- page init -->
+<script src="assets/js/pages/index.init.js"></script>
+
+<script src="assets/js/app.js"></script>
 </body>
+
 </html>
