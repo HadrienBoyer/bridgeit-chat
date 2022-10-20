@@ -2268,6 +2268,4 @@ body[data-layout-mode=dark] a.fg-emoji-picker-close-button {
   z-index: 9;
   background-color: var(--bs-card-bg);
   padding: 2px 16px;
-}-bs-card-bg);
-  padding: 2px 16px;
 }

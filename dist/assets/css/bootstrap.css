@@ -13553,4 +13553,38 @@ button, a {
   .dropdown-menu-md {
     width: 240px;
   }
+}nSlide;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes DropDownSlide {
+  100% {
+    margin-top: -1px;
+  }
+  0% {
+    margin-top: 8px;
+  }
+}
+
+@keyframes DropDownSlide {
+  100% {
+    margin-top: -1px;
+  }
+  0% {
+    margin-top: 8px;
+  }
+}
+@media (min-width: 600px) {
+  .dropdown-menu-xl {
+    width: 420px;
+  }
+  .dropdown-menu-lg {
+    width: 320px;
+  }
+  .dropdown-menu-md {
+    width: 240px;
+  }
 }
