@@ -26,6 +26,8 @@
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 
+        <script>navigator.serviceWorker.register("pwabuilder-adv-sw.js")</script>
+
     </head>
 
     <body>
@@ -432,7 +434,7 @@
 
                         <div class="chat-room-list" data-simplebar>
                             <!-- Start chat-message-list -->
-                            <h5 class="mb-3 px-4 mt-4 fs-11 text-muted text-uppercase">Favourites</h5>
+                            <h5 class="mb-3 px-4 mt-4 fs-11 text-muted text-uppercase">Favorites</h5>
 
                             <div class="chat-message-list">
                                 <ul class="list-unstyled chat-list chat-user-list" id="favourite-users">
@@ -511,7 +513,7 @@
 
                             <form>
                                 <div class="input-group search-panel mb-4">
-                                    <input type="text" class="form-control bg-light border-0" id="searchContact" onkeyup="searchContacts()" placeholder="Search contacts..." aria-label="Search Contacts..." 
+                                    <input type="text" class="form-control bg-light border-0" id="searchContact" onkeyup="searchContacts()" placeholder="Search contacts..." aria-label="Search Contacts..."
                                     aria-describedby="button-searchcontactsaddon" autocomplete="off">
                                     <button class="btn btn-light p-0" type="button" id="button-searchcontactsaddon"><i class='bx bx-search align-middle'></i></button>
                                 </div>
@@ -520,7 +522,7 @@
                         <!-- end p-4 -->
 
                         <div class="chat-message-list chat-group-list" data-simplebar >
-                            <div class="sort-contact">            
+                            <div class="sort-contact">
                             </div>
                         </div>
                         <!-- end contact lists -->
@@ -544,8 +546,8 @@
 
                         <!-- Start contact lists -->
                         <div class="chat-message-list chat-call-list" data-simplebar>
-                            <ul class="list-unstyled chat-list" id="callList">      
-                  
+                            <ul class="list-unstyled chat-list" id="callList">
+
                             </ul>
                         </div>
                         <!-- end contact lists -->
