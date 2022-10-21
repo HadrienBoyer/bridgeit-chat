@@ -225,6 +225,7 @@ gulp.task('html', function() {
 });
 
 //const gulp = require( 'gulp' );
+
 const pwa = require( 'gulp-pwa' );
 
 const options = {
@@ -239,6 +240,7 @@ gulp.task( 'build', () => {
   gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html');
   return gulp.src( 'html/**/*.html' ).pipe( pwa( options ) ).pipe(gulp.dest( 'dist' ));
 });
+
 // gulp.task('build', gulp.series(gulp.parallel('clean:tmp', 'clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 //gulp.task('build', gulp.series(gulp.parallel('clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'), 'scss', 'html'));
 
