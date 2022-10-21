@@ -1,13 +1,8 @@
 module.exports = {
-	globDirectory: './dist/',
+	globDirectory: 'dist/',
 	globPatterns: [
-		'**/*.{css,eot,svg,ttf,woff,woff2,jpg,mp3,png,ico,pdf,js,json,webmanifest,html,svelte,mjs,tsbuildinfo}'
+		'**/*.{css,eot,svg,ttf,woff,woff2,jpg,png,ico,js,html,svelte,mjs,tsbuildinfo}'
 	],
-	swDest: './dist/sw.js',
-	ignoreURLParametersMatching: [
-		/^utm_/,
-		/^fbclid$/,
-		/^param/,
-		/^admin/
-	]
+	swDest: 'dist/sw.js',
+	swSrc: './src/sw.js'
 };

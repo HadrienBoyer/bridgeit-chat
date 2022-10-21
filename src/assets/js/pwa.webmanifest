@@ -3,7 +3,7 @@
   "short_name": "BridgeIt",
   "lang": "en-EN",
   "dir": "ltr",
-  "start_url": "/",
+  "start_url": "/dist/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#f85149",
