@@ -1708,27 +1708,27 @@
     </div>
     <!-- end  layout wrapper -->
 
-@@include("partials/switcher.html")
+    @@include("partials/switcher.html")
 
+    @@include("partials/vendor-scripts.html")
 
-@@include("partials/vendor-scripts.html")
+    <!-- Modern colorpicker bundle -->
+    <script src="assets/libs/@simonwep/pickr/pickr.min.js"></script>
 
-<!-- Modern colorpicker bundle -->
-<script src="assets/libs/@simonwep/pickr/pickr.min.js"></script>
+    <!-- glightbox js -->
+    <script src="assets/libs/glightbox/js/glightbox.min.js"></script>
 
-<!-- glightbox js -->
-<script src="assets/libs/glightbox/js/glightbox.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
 
-<!-- Swiper JS -->
-<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- fg-emoji-picker JS -->
+    <script src="assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
 
-<!-- fg-emoji-picker JS -->
-<script src="assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
+    <!-- page init -->
+    <script src="assets/js/pages/index.init.js"></script>
 
-<!-- page init -->
-<script src="assets/js/pages/index.init.js"></script>
-
-<script src="assets/js/app.js"></script>
+    <script src="/sw.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
