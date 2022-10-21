@@ -1,0 +1,1 @@
+"use strict";function init(){console.log("- Components here ----------------")}document.addEventListener("DOMContentLoaded",init,!1);
