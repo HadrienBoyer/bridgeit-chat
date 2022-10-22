@@ -1,17 +1,18 @@
 {
   "private": true,
-  "name": "omiklo",
+  "name": "bridgeit",
   "version": "1.0.0",
   "description": "A secure chat. PGP.",
   "main": "gulpfile.js",
-  "author": "Omiklo",
+  "author": "Omiklo Studio",
   "browserslist": [
     "last 2 version",
     "> 2%"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "workbox injectManifest workbox-config.js && gulp"
+    "start": "workbox injectManifest workbox-config.js && gulp",
+    "dev": "workbox injectManifest workbox-dev-config.js && gulp"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

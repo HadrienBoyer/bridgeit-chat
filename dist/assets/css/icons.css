@@ -20263,8 +20263,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-45:before {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .mdi-rotate-90 {
@@ -20287,8 +20287,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-90:before {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .mdi-rotate-135 {
@@ -20311,8 +20311,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-135:before {
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .mdi-rotate-180 {
@@ -20335,8 +20335,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-180:before {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .mdi-rotate-225 {
@@ -20359,8 +20359,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-225:before {
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg);
+  -webkit-transform: rotate(-225deg);
+  transform: rotate(-225deg);
 }
 
 .mdi-rotate-270 {
@@ -20383,8 +20383,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-270:before {
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-transform: rotate(-270deg);
+  transform: rotate(-270deg);
 }
 
 .mdi-rotate-315 {
@@ -20407,8 +20407,8 @@ File: Icons Css File
 }
 
 .mdi-rotate-315:before {
-  -webkit-transform: rotate(315deg);
-  transform: rotate(315deg);
+  -webkit-transform: rotate(-315deg);
+  transform: rotate(-315deg);
 }
 
 .mdi-flip-h:before {
@@ -20438,8 +20438,8 @@ File: Icons Css File
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
   }
 }
 @keyframes mdi-spin {
@@ -20448,11 +20448,10 @@ File: Icons Css File
     transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
   }
 }
-/*# sourceMappingURL=materialdesignicons.css.map */
 /*
 * Remix Icon v2.3.0
 * https://remixicon.com
@@ -28786,8 +28785,8 @@ File: Icons Css File
 }
 
 .bx-ul {
-  margin-left: 2em;
-  padding-left: 0;
+  margin-right: 2em;
+  padding-right: 0;
   list-style: none;
 }
 
@@ -28799,7 +28798,7 @@ File: Icons Css File
   font-size: inherit;
   line-height: inherit;
   position: absolute;
-  left: -2em;
+  right: -2em;
   width: 2em;
   text-align: center;
 }
@@ -28810,8 +28809,8 @@ File: Icons Css File
     transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
   }
 }
 @keyframes spin {
@@ -28820,8 +28819,8 @@ File: Icons Css File
     transform: rotate(0);
   }
   100% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
   }
 }
 @-webkit-keyframes burst {
@@ -28877,8 +28876,8 @@ File: Icons Css File
     opacity: 1;
   }
   75% {
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
     opacity: 0;
   }
 }
@@ -28889,8 +28888,8 @@ File: Icons Css File
     opacity: 1;
   }
   75% {
-    -webkit-transform: translateX(-20px);
-    transform: translateX(-20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
     opacity: 0;
   }
 }
@@ -28901,8 +28900,8 @@ File: Icons Css File
     opacity: 1;
   }
   75% {
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
     opacity: 0;
   }
 }
@@ -28913,8 +28912,8 @@ File: Icons Css File
     opacity: 1;
   }
   75% {
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
     opacity: 0;
   }
 }
@@ -28972,16 +28971,16 @@ File: Icons Css File
     transform: scale3d(1, 1, 1);
   }
   10%, 20% {
-    -webkit-transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, -10deg);
-    transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, -10deg);
+    -webkit-transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, 10deg);
+    transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, 10deg);
   }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
-    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
-  }
-  40%, 60%, 80% {
     -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
     transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+  }
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
@@ -28994,16 +28993,16 @@ File: Icons Css File
     transform: scale3d(1, 1, 1);
   }
   10%, 20% {
-    -webkit-transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, -10deg);
-    transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, -10deg);
+    -webkit-transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, 10deg);
+    transform: scale3d(0.95, 0.95, 0.95) rotate3d(0, 0, 1, 10deg);
   }
   30%, 50%, 70%, 90% {
-    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
-    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 10deg);
+    -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+    transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
   }
   40%, 60%, 80% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
+    -webkit-transform: rotate3d(0, 0, 1, 10deg);
+    transform: rotate3d(0, 0, 1, 10deg);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
@@ -29116,30 +29115,30 @@ File: Icons Css File
 }
 
 .bx-pull-left {
-  float: left;
-  margin-right: 0.3em !important;
-}
-
-.bx-pull-right {
   float: right;
   margin-left: 0.3em !important;
 }
 
+.bx-pull-right {
+  float: left;
+  margin-right: 0.3em !important;
+}
+
 .bx-rotate-90 {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
 }
 
 .bx-rotate-180 {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
 }
 
 .bx-rotate-270 {
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  -webkit-transform: rotate(-270deg);
+          transform: rotate(-270deg);
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
 }
 
