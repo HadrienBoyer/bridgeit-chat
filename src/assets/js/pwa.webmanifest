@@ -3,7 +3,7 @@
   "short_name": "BridgeIt",
   "lang": "en-EN",
   "dir": "ltr",
-  "start_url": "/dist/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#f85149",
@@ -18,8 +18,8 @@
   ],
   "shortcuts": [
     {
-      "name": "The name you would like to be displayed for your shortcuts",
-      "url": "The url you would like to open when the user chooses this shortcut. This must be a URL local to your PWA. For example: If my start_url is /, this URL must be something like /shortcut",
+      "name": "PWA Shortcut",
+      "url": "/index.html?utm=pwabuilder",
       "description": "A description of the functionality of this shortcut"
     }
   ],
