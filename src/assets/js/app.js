@@ -6,24 +6,21 @@ Website: https://omiklo.com/
 Contact: hello@omiklo.com
 File: Main Js File
 */
+document.addEventListener('DOMContentLoaded', init, false);
 
 (function () {
   "use strict";
 
-  function initServiceWorker() {
-    if ('serviceWorker' in navigator) {
-      // Register a service worker hosted at the root of the
-      // site using the default scope.
-      navigator.serviceWorker.register('/dist/sw.js').then(
-        (registration) => {
-          console.log('Service worker registration succeeded:', registration)
-        },
-          /*catch*/ (error) => {
-            console.log('Service worker registration failed:', error)
-        }
-      )
-    } else {
-      console.log('Service workers are not supported.')
+  function initServiceWorkers() {
+
+    if ('serviceWorker' in navigator && navigator.onLine) {
+      navigator
+        .serviceWorker.register('../../sw.js')
+        .then((reg) => {
+          console.log('Service worker registered -->', reg)
+        }, (err) => {
+          console.error('Service worker not registered -->', err)
+        })
     }
   }
 
@@ -63,7 +60,7 @@ File: Main Js File
   }
 
   function init() {
-    initServiceWorker();
+    initServiceWorkers();
     initComponents();
     initSettings();
     Waves.init();

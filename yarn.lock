@@ -1115,6 +1115,71 @@
   "resolved" "https://registry.npmjs.org/@types/estree/-/estree-0.0.39.tgz"
   "version" "0.0.39"
 
+"@types/expect@^1.20.4":
+  "integrity" "sha512-Q5Vn3yjTDyCMV50TB6VRIbQNxSE4OmZR86VSbGaNpfUolm0iePBB4KdEEHmxoY5sT2+2DIvXW0rvMDP2nHZ4Mg=="
+  "resolved" "https://registry.npmjs.org/@types/expect/-/expect-1.20.4.tgz"
+  "version" "1.20.4"
+
+"@types/glob-stream@*":
+  "integrity" "sha512-AGOUTsTdbPkRS0qDeyeS+6KypmfVpbT5j23SN8UPG63qjKXNKjXn6V9wZUr8Fin0m9l8oGYaPK8b2WUMF8xI1A=="
+  "resolved" "https://registry.npmjs.org/@types/glob-stream/-/glob-stream-6.1.1.tgz"
+  "version" "6.1.1"
+  dependencies:
+    "@types/glob" "*"
+    "@types/node" "*"
+
+"@types/glob@*":
+  "integrity" "sha512-l6NQsDDyQUVeoTynNpC9uRvCUint/gSUXQA2euwmTuWGvPY5LSDUu6tkCtJB2SvGQlJQzLaKqcGZP4//7EDveA=="
+  "resolved" "https://registry.npmjs.org/@types/glob/-/glob-8.0.0.tgz"
+  "version" "8.0.0"
+  dependencies:
+    "@types/minimatch" "*"
+    "@types/node" "*"
+
+"@types/gulp-cached@^0.0.32":
+  "integrity" "sha512-9s9wNJLAdDoXHw26+SbLyjJfSYu4BAAP9NdBal2TnuixbCcLf3rodsAuGU4qKzmrGY2sgUrBVz4c5lNBPHZOSA=="
+  "resolved" "https://registry.npmjs.org/@types/gulp-cached/-/gulp-cached-0.0.32.tgz"
+  "version" "0.0.32"
+  dependencies:
+    "@types/node" "*"
+
+"@types/gulp-file-include@^0.14.5":
+  "integrity" "sha512-aA5G/DAVx3bzZvNuIX4pOxujAhd/c5rpkevoZCAuw8FvkYsjuKPtxEV7nBO4U2ybtpqXuAXdBAYhCR025u60vg=="
+  "resolved" "https://registry.npmjs.org/@types/gulp-file-include/-/gulp-file-include-0.14.5.tgz"
+  "version" "0.14.5"
+  dependencies:
+    "@types/node" "*"
+
+"@types/gulp-rename@^2.0.1":
+  "integrity" "sha512-9ZjeS2RHEnmBmTcyi2+oeye3BgCsWhvi4uv3qCnAg8i6plOuRdaeNxjOves0ELysEXYLBl7bCl5fbVs7AZtgTA=="
+  "resolved" "https://registry.npmjs.org/@types/gulp-rename/-/gulp-rename-2.0.1.tgz"
+  "version" "2.0.1"
+  dependencies:
+    "@types/node" "*"
+    "@types/vinyl" "*"
+
+"@types/gulp-uglify@^3.0.7":
+  "integrity" "sha512-0zf9MJ6A+GB5V6hNb/RZzlIeCs0zmlvj77z/1NgOGy1qv73FSh0XcZA8Oa6q4/0xMb+t7q3HS9IUU2AUi1kxyw=="
+  "resolved" "https://registry.npmjs.org/@types/gulp-uglify/-/gulp-uglify-3.0.7.tgz"
+  "version" "3.0.7"
+  dependencies:
+    "@types/node" "*"
+    "@types/uglify-js" "*"
+
+"@types/gulp@^4.0.9":
+  "integrity" "sha512-zzT+wfQ8uwoXjDhRK9Zkmmk09/fbLLmN/yDHFizJiEKIve85qutOnXcP/TM2sKPBTU+Jc16vfPbOMkORMUBN7Q=="
+  "resolved" "https://registry.npmjs.org/@types/gulp/-/gulp-4.0.9.tgz"
+  "version" "4.0.9"
+  dependencies:
+    "@types/undertaker" "*"
+    "@types/vinyl-fs" "*"
+    "chokidar" "^3.3.1"
+
+"@types/minimatch@*":
+  "integrity" "sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA=="
+  "resolved" "https://registry.npmjs.org/@types/minimatch/-/minimatch-5.1.2.tgz"
+  "version" "5.1.2"
+
 "@types/minimist@^1.2.0":
   "integrity" "sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ=="
   "resolved" "https://registry.npmjs.org/@types/minimist/-/minimist-1.2.2.tgz"
@@ -1141,6 +1206,44 @@
   "integrity" "sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg=="
   "resolved" "https://registry.npmjs.org/@types/trusted-types/-/trusted-types-2.0.2.tgz"
   "version" "2.0.2"
+
+"@types/uglify-js@*":
+  "integrity" "sha512-GkewRA4i5oXacU/n4MA9+bLgt5/L3F1mKrYvFGm7r2ouLXhRKjuWwo9XHNnbx6WF3vlGW21S3fCvgqxvxXXc5g=="
+  "resolved" "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.17.1.tgz"
+  "version" "3.17.1"
+  dependencies:
+    "source-map" "^0.6.1"
+
+"@types/undertaker-registry@*":
+  "integrity" "sha512-Z4TYuEKn9+RbNVk1Ll2SS4x1JeLHecolIbM/a8gveaHsW0Hr+RQMraZACwTO2VD7JvepgA6UO1A1VrbktQrIbQ=="
+  "resolved" "https://registry.npmjs.org/@types/undertaker-registry/-/undertaker-registry-1.0.1.tgz"
+  "version" "1.0.1"
+
+"@types/undertaker@*":
+  "integrity" "sha512-gW3PRqCHYpo45XFQHJBhch7L6hytPsIe0QeLujlnFsjHPnXLhJcPdN6a9368d7aIQgH2I/dUTPFBlGeSNA3qOg=="
+  "resolved" "https://registry.npmjs.org/@types/undertaker/-/undertaker-1.2.8.tgz"
+  "version" "1.2.8"
+  dependencies:
+    "@types/node" "*"
+    "@types/undertaker-registry" "*"
+    "async-done" "~1.3.2"
+
+"@types/vinyl-fs@*":
+  "integrity" "sha512-LgBpYIWuuGsihnlF+OOWWz4ovwCYlT03gd3DuLwex50cYZLmX3yrW+sFF9ndtmh7zcZpS6Ri47PrIu+fV+sbXw=="
+  "resolved" "https://registry.npmjs.org/@types/vinyl-fs/-/vinyl-fs-2.4.12.tgz"
+  "version" "2.4.12"
+  dependencies:
+    "@types/glob-stream" "*"
+    "@types/node" "*"
+    "@types/vinyl" "*"
+
+"@types/vinyl@*":
+  "integrity" "sha512-ayJ0iOCDNHnKpKTgBG6Q6JOnHTj9zFta+3j2b8Ejza0e4cvRyMn0ZoLEmbPrTHe5YYRlDYPvPWVdV4cTaRyH7g=="
+  "resolved" "https://registry.npmjs.org/@types/vinyl/-/vinyl-2.0.6.tgz"
+  "version" "2.0.6"
+  dependencies:
+    "@types/expect" "^1.20.4"
+    "@types/node" "*"
 
 "abbrev@1":
   "integrity" "sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q=="
@@ -1477,7 +1580,7 @@
   "resolved" "https://registry.npmjs.org/assign-symbols/-/assign-symbols-1.0.0.tgz"
   "version" "1.0.0"
 
-"async-done@^1.2.0", "async-done@^1.2.2":
+"async-done@^1.2.0", "async-done@^1.2.2", "async-done@~1.3.2":
   "integrity" "sha512-uYkTP8dw2og1tu1nmza1n1CMW0qb8gWWlwqMmLb7MhBVs4BXrFziT6HXUd+/RlRA/i4H9AkofYloUbs1fwMqlw=="
   "resolved" "https://registry.npmjs.org/async-done/-/async-done-1.3.2.tgz"
   "version" "1.3.2"
@@ -2021,7 +2124,7 @@
   optionalDependencies:
     "fsevents" "^1.2.7"
 
-"chokidar@^3.5.1", "chokidar@>=3.0.0 <4.0.0":
+"chokidar@^3.3.1", "chokidar@^3.5.1", "chokidar@>=3.0.0 <4.0.0":
   "integrity" "sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw=="
   "resolved" "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz"
   "version" "3.5.3"

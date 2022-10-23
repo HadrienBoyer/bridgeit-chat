@@ -12,9 +12,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "workbox injectManifest workbox-config.js && gulp",
-    "dev": "workbox injectManifest workbox-dev-config.js && gulp"
+    "dev": "workbox injectManifest workbox-dev-config.js --watch && gulp"
   },
   "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-cached": "^0.0.32",
+    "@types/gulp-file-include": "^0.14.5",
+    "@types/gulp-rename": "^2.0.1",
+    "@types/gulp-uglify": "^3.0.7",
     "browser-sync": "^2.26.7",
     "del": "7.0.0",
     "gulp": "^4.0.2",
