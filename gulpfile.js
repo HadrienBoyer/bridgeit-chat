@@ -1,33 +1,11 @@
 #!/usr/bin/env node
 'use strict';
 
-// import cached from 'gulp-cached';
-// import cssnano from 'gulp-cssnano';
-// import { sync } from 'del';
-// import fileinclude from 'gulp-file-include';
-// import { task, watch, series, src as _src, dest, parallel } from 'gulp';
-// import gulpif from 'gulp-if';
-// import npmdist from 'gulp-npm-dist';
-// import replace from 'gulp-replace';
-// import uglify from 'gulp-uglify';
-// import useref from 'gulp-useref-plus';
-// import rename from 'gulp-rename';
-// const sass = require('gulp-sass')(require('sass'));
-// import autoprefixer from "gulp-autoprefixer";
-// import { init, write } from "gulp-sourcemaps";
-// import cleanCSS from 'gulp-clean-css';
-// import rtlcss from 'gulp-rtlcss';
-// // const path = require('path');
-
-const browsersync = require('browser-sync').create();
-
-//module.exports = init() {
-
 import cached from 'gulp-cached';
 import cssnano from 'gulp-cssnano';
 import { sync } from 'del';
 import fileinclude from 'gulp-file-include';
-import { task, watch, series, _src, dest, parallel } from 'gulp';
+import { task, watch, series, src as _src, dest, parallel } from 'gulp';
 import gulpif from 'gulp-if';
 import npmdist from 'gulp-npm-dist';
 import replace from 'gulp-replace';
@@ -39,6 +17,28 @@ import autoprefixer from "gulp-autoprefixer";
 import { init, write } from "gulp-sourcemaps";
 import cleanCSS from 'gulp-clean-css';
 import rtlcss from 'gulp-rtlcss';
+// const path = require('path');
+
+const browsersync = require('browser-sync').create();
+
+//module.exports = init() {
+
+// const { task, watch, series, _src, dest, parallel } =  require('gulp');
+// const cached = require('gulp-cached');
+// const cssnano = require('gulp-cssnano');
+// const { sync } = require('del');
+// const fileinclude = require('gulp-file-include');
+// const gulpif  = require('gulp-if');
+// const npmdist = require('gulp-npm-dist');
+// const replace = require('gulp-replace');
+// const uglify  = require('gulp-uglify');
+// const useref  = require('gulp-useref-plus');
+// const rename  = require('gulp-rename');
+// const sass = require('gulp-sass')(require('sass'));
+// const autoprefixer = require("gulp-autoprefixer");
+// const { init, write } = require("gulp-sourcemaps");
+// const cleanCSS = require('gulp-clean-css');
+// const rtlcss = require('gulp-rtlcss');
 // const path = require('path');
 
 const paths = {
